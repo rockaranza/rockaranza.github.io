@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Mi Portafolio</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#trabajos">Trabajos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contacto">Contacto</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Sobre Mi</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="trabajos" class="container p-4 my-5">
+    
+    <h2 class="mb-4">Trabajos</h2>
+    
+    <!-- Tarjeta proyecto -->
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/img/site01.png" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">PizzaGo!</h5>
+            <p class="card-text">Proyecto realizado para el curso desafioLatam.</p>
+            <p>Tecnologías: <i class="fab fa-html5 text-blueGray"></i> <i class="fab fa-css3 text-blueGray"></i> <i class="fab fa-github text-blueGray"></i></p>
+            <a href="#" data-toggle="modal" data-target="#proyecto1Modal" class="btn btn-secondary">Saber más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/img/site02.png" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">Cuppon</h5>
+            <p class="card-text">Proyecto realizado para el curso desafioLatam.</p>
+            <p>Tecnologías: <i class="fab fa-html5 text-blueGray"></i> <i class="fab fa-css3 text-blueGray"></i> <i class="fab fa-bootstrap text-blueGray"></i> <i class="fab fa-github text-blueGray"></i></p>
+            <a href="#" data-toggle="modal" data-target="#proyecto2Modal" class="btn btn-secondary">Saber más</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <img src="./assets/img/site03.png" class="card-img-top" alt="Proyecto 1">
+          <div class="card-body">
+            <h5 class="card-title">Iguanas</h5>
+            <p class="card-text">Proyecto realizado para el curso desafioLatam.</p>
+            <p>Tecnologías: <i class="fab fa-html5 text-blueGray"></i> <i class="fab fa-css3 text-blueGray"></i> <i class="fab fa-github text-blueGray"></i></p>
+            <a href="#" data-toggle="modal" data-target="#proyecto3Modal" class="btn btn-secondary">Saber más</a>
+          </div>
+        </div>
+      </div>
+
+
+
+    </div>
+  </section>
+
+  <section class="bg-light p-5">
+    <div class="container">
+      <div class="row py-4" id="contacto">
+        <div class="col-md-12">
+          <h2 class="mb-4">Contacto</h2>
+            <form class="mx-auto">
+              <div class="form-group">
+                <label for="nombre">Nombre</label>
+                <input type="text" class="form-control blueGray-focus" id="nombre" placeholder="Tu nombre">
+              </div>
+              <div class="form-group">  
+                <label for="correo">Correo</label>
+                <input type="email" class="form-control blueGray-focus" id="correo" placeholder="Tu correo">
+              </div>
+              <div class="form-group">
+                <label for="mensaje">Mensaje</label>
+                <textarea class="form-control blueGray-focus" id="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
+              </div>
+              <button type="submit" class="btn btn-secondary">Enviar</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Sitio 1 -->
+  <div class="modal fade" id="proyecto1Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proyecto1ModalLabel">PizzaGo!</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/site01.png" class="img-fluid" alt="Proyecto 1">
+          <p class="mt-4">Proyecto realizado para practicar la distribucion de elementos HTML. Se utilizo FlexBox para dar formato a los elementos del proyecto.</p>
+          <p>Tecnologías: <i class="fab fa-html5 text-blueGray"></i> <i class="fab fa-css3 text-blueGray"></i> <i class="fab fa-github text-blueGray"></i></p>
+          <a href="https://github.com/rockaranza/pizzaHTML" target="_blank" class="text-blueGray">
+            <i class="fab fa-github text-blueGray"></i> Repositorio en GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Sitio 2 -->
+  <div class="modal fade" id="proyecto2Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proyecto2ModalLabel">Cuppon</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/site02.png" class="img-fluid" alt="Proyecto 1">
+          <p class="mt-4">Clon de sitio web de Cuppones utilizando Boostrap y personalizando elementos con CSS.</p>
+          <p>Tecnologías: <i class="fab fa-html5 text-blueGray"></i> <i class="fab fa-css3 text-blueGray"></i> <i class="fab fa-bootstrap text-blueGray"></i> <i class="fab fa-github text-blueGray"></i></p>
+          <a href="https://github.com/rockaranza/Cuppon" target="_blank" class="text-blueGray">
+            <i class="fab fa-github text-blueGray"></i> Repositorio en GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Modal Sitio 3 -->
+  <div class="modal fade" id="proyecto3Modal" tabindex="-1" role="dialog" aria-labelledby="proyecto1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="proyecto3ModalLabel">Iguanas</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <img src="./assets/img/site03.png" class="img-fluid" alt="Proyecto 1">
+          <p class="mt-4">Maquetación de sitio web respecto a Mockup entergado. Se utilizo HTML y CSS para el desarrollo del proyecto.</p>
+          <p>Tecnologías: <i class="fab fa-html5 text-blueGray"></i> <i class="fab fa-css3 text-blueGray"></i> <i class="fab fa-github text-blueGray"></i></p>
+          <a href="https://github.com/rockaranza/Iguana" target="_blank" class="text-blueGray">
+            <i class="fab fa-github text-blueGray"></i> Repositorio en GitHub
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer class="bg-dark text-white py-3">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+           Desarrollado por <a href="#" class="text-blueGray">mi</a>
+        </div>
+        <div class="col-md-6 text-right">
+          <a href="#" class="text-white pr-2"><i class="fab fa-github"></i></a>
+          <a href="#" class="text-white pr-2"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" class="text-white"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="https://kit.fontawesome.com/ae6add6e95.js" crossorigin="anonymous"></script>
+</body>
+</html>
