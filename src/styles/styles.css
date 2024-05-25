@@ -1,0 +1,812 @@
+:root {
+    /*colors*/
+    --bg-color-primary: #000000;
+    --bg-color-secondary: #111111;
+    --text-color-title: #FFFFFF;
+    --text-color-paragraph: #BBBBBB;
+    --text-color-titleBG: #252525;
+    /*text sizes*/
+    --section-title-smallSize: 4.5rem;
+    --section-title-mediumSize: 10rem;
+    --section-title-largeSize: 12rem;
+    --section-subTitle-smallSize: 2rem;
+    --section-subTitle-mediumSize: 3rem;
+    --section-subTitle-largeSize: 4rem;
+    --title-size: 1.8rem;
+    --paragraph-size: 1.6rem; 
+    /*fonts families*/
+    --font-text: 'Mulish', sans-serif;
+    --font-title: 'Montserrat', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+}
+
+
+/*COMPONENTES*/
+.titleWhite {
+    font-family: var(--font-title);
+    font-size: var(--section-title-smallSize);
+    font-weight: 900;
+    color: var(--text-color-title);
+}
+
+.titleBlack {
+    font-family: var(--font-title);
+    font-size: var(--section-title-smallSize);
+    font-weight: 900;
+    -webkit-text-stroke: 2px var(--text-color-titleBG);
+    color: transparent;
+}
+
+.titleSection {
+    font-family: var(--font-title);
+    font-size: var(--section-subTitle-smallSize);
+    color: var(--text-color-title);
+}
+
+.text-backTitle {
+    position: absolute;
+    margin-top: 0rem;
+}
+
+.text-frontTitle {
+    position: relative;
+    margin-top: -3.5rem;
+}
+
+@media(min-width: 768px) {
+    .titleBlack {
+        font-size:var(--section-title-mediumSize);
+    }
+    .titleWhite {
+        font-size: var(--section-title-mediumSize);
+    }
+    .titleSection {
+        font-size: var(--section-subTitle-mediumSize);
+    }
+    .text-frontTitle {
+        margin-top: -6rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .titleBlack {
+        font-size:var(--section-title-largeSize);
+    }
+    .titleWhite {
+        font-size: var(--section-title-largeSize);
+    }
+    .titleName {
+        font-size: 4rem;
+    }
+    .titleSection {
+        font-size: var(--section-subTitle-largeSize);
+    }
+    .text-frontTitle {
+        margin-top: -8rem;
+    }
+}
+
+    /* SCROLL BUTTON */
+.upButton {
+    width: 5rem;
+    height: 5rem;
+    position: fixed;
+    bottom: 6rem;
+    right: 2rem;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--text-color-paragraph);
+    color: var(--text-color-titleBG);
+    font-size: 3rem;
+    cursor: pointer;
+}
+
+@media(min-width: 768px) {
+    .upButton {
+        bottom: 7rem;
+        right: 4rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    .upButton {
+        bottom: 8rem;
+        right: 4rem;
+    }
+
+    .upButton:hover {
+        background-color: var(--text-color-title);
+        color: var(--bg-color-primary);
+    }
+}
+/* FIN UP BUTTON */
+/* ESCONDER */
+.hidden {
+    display: none;
+}
+
+.opacity {
+    opacity: 0;
+}
+/* FIN ESCONDER*/
+/*----- Fin COMPONENTES -----*/
+
+/*----- HEADER -----*/
+.headerContainer {
+    width: 100%;
+    height: 10vh;
+    position: fixed;
+    z-index: 5;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    height: 10vh;
+    margin: auto;
+    position: relative;
+}
+
+.logo {
+    width: 10rem;
+    height: auto;
+    object-fit: contain;
+}
+
+.navBar {
+    font-size: 3rem;
+    color: var(--text-color-title);
+    position: relative;
+}
+
+.navBar2 {
+    font-size: 3rem;
+    color: var(--text-color-title);
+    position: absolute;
+    margin-left: -2.5rem;
+}
+
+.mainNav {
+    width: 100%;
+    margin-left: 15rem;
+    position: absolute;
+    background-color: var(--bg-color-primary);
+    transition: all 0.5s;
+} 
+.mostrar {
+    margin-left: -15rem;
+} 
+
+
+.itemMenu {
+    list-style: none;
+}
+
+.linkMenu {
+    display: inline-block;
+    width: 100%;
+    margin: 2rem;
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    color: var(--text-color-title);
+    text-decoration: none;
+}
+/*Cambiar color Header*/
+.headerColor {
+    background-color: var(--bg-color-primary);
+    transition: all 0.5s ease;
+}
+
+@media (min-width: 768px) {
+    .headerContainer {
+        height: 15vh;
+    }
+
+    .header {
+        width: 80%;
+        height: 15vh;
+        margin-top: 1rem;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .logo{
+        width: 20rem;
+        height: auto;
+    }
+    .navBar {
+        display:none;
+        position: unset;
+    }
+    .navBar2 {
+        display: none;
+    }
+
+    .menuContainer {
+        width: 100%;
+    }
+
+    .mainNav {
+        width: 100%;
+        margin: 0;
+        height: 10vh;
+        position: unset;
+        background-color: rgba(0,0,0,0);
+        transition: all 0s;
+    } 
+
+    .menu {
+        display: flex;
+        padding-top: 2rem;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .linkMenu {
+        margin: 0;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    .headerContainer {
+        height: 10vh;
+    }
+    .header {
+        height: 10vh;
+        margin: auto;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo {
+        width: 20rem;
+        height: auto;
+    }
+    .menuContainer {
+        width: 50%;
+    }
+
+    .itemMenu:hover {
+        border-bottom: 2px solid var(--text-color-title);
+        transform: all 0.6s ease;
+    }
+
+    .linkMenu:hover {
+        color:var(--text-color-paragraph);
+    }
+
+}
+/*----- Fin HEADER -----*/
+
+/*----- HOME ------*/
+.homeContainer {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--bg-color-primary);
+}
+
+.home {
+    width: 90%;
+    display: flex;
+}
+
+.titlesHome {
+    width: 90%;
+    margin: auto;
+}
+
+.titleName {
+    position: absolute;
+    font-size: 2rem;
+    font-family: var(--font-text);
+    font-style: italic;
+    color: var(--text-color-paragraph);
+}
+
+.homeImg{
+    display: none;
+}
+
+@media(min-width: 768px) {
+    .homeContainer {
+        width: 100%;
+        margin: auto;
+    }
+    .home {
+        width: 100%;
+        height: 100vh;
+        margin: auto;
+    }
+    .titlesHome {
+        width: 30%;
+        margin-left: 10%;
+        overflow-x: visible;
+        position: relative;
+    }
+
+    .homeImg {
+        width: 100%;
+        height: auto;
+        display: flex;
+    }
+    
+    .homeImg img {
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;
+    }
+}
+/*----- Fin HOME -----*/
+
+/*----- ABOUT ME -----*/
+.aboutMeContainer {
+    width: 100%;
+    padding: 8rem 0 4rem 0;
+    background-color: var(--bg-color-primary);
+}
+
+.aboutMe {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: auto;
+}
+.aboutMeTitle {
+    display: none;
+}
+
+.aboutMeContainerText p{
+    margin-top: 2rem;
+    font-size: var(--paragraph-size);
+    font-family: var(--font-text);
+    line-height: 2.5rem;
+    color: var(--text-color-paragraph)
+}
+
+.aboutMeContainerText p span {
+    font-weight: 900;
+}
+
+.aboutMeContainerImg img{
+    width: 100%;
+}
+
+.aboutMeContainerButton {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 3rem;
+}
+
+.anchorButton {
+    width: 20rem;
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: var(--paragraph-size);
+    font-weight: 700;
+    border: solid 1px var(--text-color-title);
+    background-color: var(--text-color-title);
+    text-decoration: none;
+    color: var(--text-color-titleBG);
+    
+}
+
+
+
+@media(min-width: 768px) {
+    .aboutMeContainer {
+        padding: 12rem 0 4rem 0;
+    }
+    .aboutMe {
+        display: flex;
+        flex-direction: column;
+        width: 80%;
+        margin: auto;
+    }
+    .aboutMeTitle {
+        display: flex;
+        flex-direction: column;
+    }
+    .aboutMeDescrition {
+        display: flex;
+        margin-top: 2rem;
+    }
+    .aboutMeContainerImg img{
+        width: 100%;
+    }
+
+    .aboutMeContainerText {
+        margin-left: 2rem;
+    }
+
+    .aboutMeContainerText p{
+        margin-top: 0;
+        margin-bottom: 2rem;
+    }
+}
+
+@media(min-width: 1024px) {
+    
+    .aboutMeDescrition {
+        margin-top: 5rem;
+    }
+
+    .aboutMeContainerButton {
+        padding-top: 5rem;
+    }
+
+     .anchorButton:hover {
+        background-color: var(--bg-color-primary);
+        transition: all ease 0.5s;
+        color: var(--text-color-title);
+    } 
+}
+/*----- Fin ABOUT ME -----*/
+
+/*----- SKILLS -----*/
+.skillsContainer {
+    width: 100%;
+    height: 80vh;
+    padding: 8rem 0 4rem 0;
+    background-color: var(--bg-color-primary);
+}
+
+.skills {
+    width: 90%;
+    height: 70vh;
+    margin: auto;
+}
+
+.skillsContainerTitles {
+    width: 100%;
+}
+
+.skillCardsContainer {
+    width: 100%;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.skillCard {
+    width: 12rem;
+    margin: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.colorGitHub {
+    color: #FFFFFF;
+}
+
+.skillCard h3 {
+    margin-top: 1rem;
+    font-size: var(--title-size);
+    font-family: var(--font-text);
+    font-weight: bold;
+    color:var(--text-color-paragraph);
+}
+
+.skillIcon {
+    position: relative;
+    font-size: 5rem;
+}
+
+@media(min-width: 768px) {
+    .skillsContainer {
+        padding: 12rem 0 4rem 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .skills {
+        width: 80%;
+    }
+
+    .skillCardsContainer {
+        margin-top: 6rem;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: inherit;
+    }
+    
+    .skillCard {
+        width: 12rem;
+        margin: 2rem 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .skillCard h3 {
+        margin-top: 13rem;
+        position: absolute;
+        font-size: var(--title-size);
+        font-family: var(--font-text);
+        font-weight: bold;
+        color:var(--text-color-paragraph);
+    }
+    
+    .skillIcon {
+        position: relative;
+        font-size: 8rem;
+    }
+    .skillIcon:hover {
+        font-size: 10rem;
+        transition: all 0.5s 0s ease;
+    }
+}
+
+.skillIconHTML {
+    color: #F4470C;
+}
+.skillIconCSS {
+    color: #196FB4;
+}
+.skillIconJS {
+    color: #E8D44D;
+}
+.skillIconSASS {
+    color: #CE6B9E;
+}
+.skillIconBootstrap {
+    color: #553A7B;
+}
+.skillIconGH {
+    color: #FFFFFF;
+}
+.skillIconWP {
+    color: #03719C;
+}
+/*----- Fin SKILLS -----*/
+
+/*----- PROJECTS -----*/
+.projectsContainer {
+    width: 100%;
+    padding: 8rem 0 4rem 0;
+    background-color: var(--bg-color-secondary);
+}
+
+.projects {
+    width: 90%;
+    margin: auto;
+}
+
+.cardsProjects {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.card img {
+    width: 100%;
+}
+
+.card a {
+    display: inline-block;
+    margin-top: 1rem;
+    text-decoration: none;
+    font-family: var(--font-title);
+    font-size: var(--title-size);
+    color:var(--text-color-title)
+}
+
+.card p {
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    color: var(--text-color-paragraph);
+}
+@media(min-width: 768px) {
+    .projectsContainer {
+        padding: 12rem 0 4rem 0;
+    }
+}
+
+@media(min-width: 1024px) {
+    .projectsContainer {
+        padding: 8rem 0 4rem 0;
+    }
+
+    .projects {
+        width: 80%;
+        margin: auto;
+    }
+
+    .cardsProjects {
+        margin-top: 3rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    
+    .card {
+        width: 30%;
+    }  
+ 
+}
+/*----- Fin PROJECTS -----*/
+
+/*----- CONTACT -----*/
+.contactContainer {
+    width: 100%;
+    padding: 8rem 0 4rem 0;
+    background-color: var(--bg-color-primary);
+}
+
+.contact {
+    width: 90%;
+    margin: auto;
+}
+
+.formContainer {
+    display: flex;
+    padding: 4rem 0;
+    flex-direction: column;
+}
+
+.formContainer p {
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    color:var(--text-color-paragraph);
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.inputText {
+    width: 100%;
+    height: 4rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    border: solid 1px var(--text-color-titleBG);
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-title);
+}
+
+.inputText:focus {
+    border-color: var(--text-color-paragraph);
+    outline: none;
+}
+
+.inputMenssage {
+    width: 100%;
+    height: 10rem;
+    margin-bottom: 1.5rem;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    font-family: var(--font-text);
+    font-size: var(--paragraph-size);
+    border: solid 1px var(--text-color-titleBG);
+    background-color: var(--bg-color-primary);
+    color: var(--text-color-title);
+}
+
+.inputMenssage:focus {
+    border-color: var(--text-color-paragraph);
+    outline: none;
+}
+
+.button {
+    width: 20rem;
+    height: 6rem;
+    font-size: var(--paragraph-size);
+    border: solid 1px var(--text-color-title);
+    background-color: var(--text-color-title);
+}
+
+.button:hover {
+    background-color: var(--bg-color-primary);
+    transition: all ease 0.5s;
+    color: var(--text-color-title);
+}
+
+@media(min-width: 768px) {
+    .contactContainer {
+        padding: 12rem 0 4rem 0;
+    }
+
+    .contact {
+        width: 80%;
+    }
+}
+
+@media(min-width: 1024px) {
+    .contactContainer {
+        padding: 8rem 0 4rem 0;
+    }
+
+    .formContainer {
+        width: 60%;
+        margin: auto;
+        padding-top: 8rem;
+    }
+}
+/*----- Fin CONTACT -----*/
+
+/*----- FOOTER -----*/
+.footerContainer {
+    width: 100%;
+    height: 10vh;
+    background-color: var(--bg-color-secondary);
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    height: 10vh;
+    margin: auto;   
+}
+
+.footer p {
+    font-size: 1.2rem;
+    font-family: var(--font-text);
+    color: var(--text-color-title)
+}
+
+.footer a {
+    color:var(--text-color-paragraph)
+}
+.socialNetworks {
+    width: 30%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 2rem;
+}
+
+.socialNetworks i {
+    color:var(--text-color-title);
+}
+
+@media(min-width: 1024px) {
+    .footer p {
+        font-size: 1.5rem;
+    }
+
+    .socialNetworks {
+        width: 20%;
+    }
+
+    .socialNetworks i {
+        font-size: 3rem;
+    }
+
+    .linkedinColor:hover {
+        color: #2764AC;
+    }
+    .twitterColor:hover {
+        color: #39A2F2;
+    }
+    .gitHubColor:hover {
+        color: #000000;
+    }
+}
+/*----- Fin FOOTER -----*/

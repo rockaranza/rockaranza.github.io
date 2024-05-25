@@ -1,206 +1,209 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Ocaranza García</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;900&family=Mulish:ital,wght@0,700;0,900;1,400&display=swap"" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles/styles.css">
+    <link rel="shortcut icon" href="src/img/favicon.png">
+    <title>Frontend Developer</title>
 </head>
 <body>
-
-  <!-- MENU -->
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark py-5 d-flex flex-column align-items-center">
-    <div class="d-flex flex-column align-items-center">
-      <img src="./assets/img/fotoCV.jpeg" alt="Foto de Diego" class="img-fluid rounded-circle" width="100">
-      <a class="navbar-brand mt-2" href="#">
-        <h1>Diego Ocaranza García</h1>
-      </a>
-    </div>
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarNav">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-          <a class="nav-link" href="#mis-datos">Mis Datos</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#educacion">Educación</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#experiencia">Experiencia</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#portafolio">Portafolio</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#contacto">Contacto</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  
-
-  <main>
-  
-    <!-- MIS DATOS -->
-    <section class="container pt-5">
-      <div class="row" id="mis-datos">
-        <div class="col-md-8">
-          <h2 class="mb-4">Mis Datos</h2>
-          <p><i class="fas fa-envelope"></i> diego.ocaranza@gmail.com</p>
-          <p><i class="fas fa-map-marker-alt"></i> Laval, Quebec. Canadá.</p>
-          <p><i class="fas fa-phone"></i> +1 (438) 871-9220</p>
-        </div>
-      </div>
-    </section>
-  
-    <!-- EDUCACION     -->
-    <section class="container pt-5">
-      <div class="row py-4" id="educacion">
-        <div class="col-md-8">
-          <h2 class="mb-4">Educación</h2>
-          <ul>
-            <li class="mt-5">
-              <h5 class="text-blueGray text-destacado">DesafioLatam</h5>
-              <p>Curso: Desarrollo Full Stack JavaScript</p>
-              <p>Estado Actual: Estudiante</p>
-              <p>Fecha Inicio: Septiembre 2023 a la fecha</p>
-            </li>
-            <li class="mt-5">
-              <h5 class="text-blueGray text-destacado">Instituto Profesional Providencia</h5>
-              <p>Carrera: Analista de Sistemas</p>
-              <p>Estado Actual: Estudiante</p>
-              <p>Fecha inicio: Marzo 2023 a la fecha</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-    
-    <!-- EXPERIENCIA -->
-    <section class="container pt-5">
-      <div class="row" id="experiencia">
-        <div class="col-md-8">
-          <h2 class="mb-4">Experiencia Laboral</h2>
-          <ul>
-            <li class="mt-5">
-              <h5 class="text-blueGray text-destacado">Minimal Diseño</h5>
-              <p>Puesto: Desarrollador WordPress</p>
-              <p>Fecha: Enero 2020 - Presente</p>
-              <p>Descripción: Creación de sitios web en WordPress, dando soluciones para los clientes, implementando carros de compra y solucionando problemas de diseño con HTML y CSS.</p>
-            </li>
-            <li class="mt-5">
-                <h5 class="text-blueGray text-destacado">Emprende.cl</h5>
-                <p>Puesto: Web Master</p>
-                <p>Fecha: Marzo 2022 - Marzo 2023</p>
-                <p>Descripción: Creación de Mockup para presentar a clientes, ademas de encarme del desarrollo del sitio web en WordPress, implementacion de dinstitons pluggin según requerimientos de los clientes. Configuraba los servicios de Google para correos electrónicos del cliente y los incorporaba en el formulario de contacto.</p>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </section>
-
-    <!-- PORTAFOLIO    -->
-    <section class="bg-blueGray mt-5 p-5">
-      <div class="container">
-        <div class="row py-4" id="portafolio">
-          <div class="col-md-8">
-            <h2 class="mb-4">Portafolio</h2>
-          </div>
-          <!-- TARJETAS -->
-          <div class="col-md-12">
-                  
-            <div class="row">    
-              <div class="col-md-4 mb-3">
-                <div class="card">
-                  <img src="./assets/img/site01.png" class="card-img-top" alt="Proyecto 1">
-                  <div class="card-body">
-                    <h5 class="card-title">Pizza Go!</h5>
-                    <p class="card-text">Proyecto realizado para el curso desafioLatam.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-md-4 mb-3">
-                <div class="card">
-                  <img src="./assets/img/site02.png" class="card-img-top" alt="Proyecto 1">
-                  <div class="card-body">
-                    <h5 class="card-title">Cuppon</h5>
-                    <p class="card-text">Proyecto realizado para el curso desafioLatam.</p>
-                  </div>
-                </div>
-              </div>
-    
-              <div class="col-md-4 mb-3">
-                <div class="card">
-                  <img src="./assets/img/site03.png" class="card-img-top" alt="Proyecto 1">
-                  <div class="card-body">
-                    <h5 class="card-title">Iguanas</h5>
-                    <p class="card-text">Proyecto realizado para el curso desafioLatam.</p>
-                  </div>
-                </div>
-              </div>
-    
+    <!-- HEADER -->
+    <header class="headerContainer " id="header">
+        <div class="header">
+            <img src="src/img/LogoOcaranza.png" alt="Ocaranza" class="logo">
+            <div class="menuContainer">
+                <span class="navBar" id="menuButton">
+                    <i class="fas fa-bars"></i>
+                </span>
+                <!-- <span class="navBar2" id="menuCloseButton">
+                    <i class="fas fa-times"></i>
+                </span> -->
+                <nav class="mainNav" id="mainNav">
+                    <ul class="menu" id="menu">
+                        <li class="itemMenu"><a href="#home" class="linkMenu">Inicio</a></li>
+                        <li class="itemMenu"><a href="#aboutMe" class="linkMenu" id="test">Sobre Mi</a></li>
+                        <li class="itemMenu"><a href="#skills" class="linkMenu">Habilidades</a></li>
+                        <li class="itemMenu"><a href="#proyects" class="linkMenu">Proyectos</a></li>
+                        <li class="itemMenu"><a href="#contact" class="linkMenu">Contacto</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div class="text-center">
-              <a href="portafolio.html" class="btn btn-light mt-2">Conocer más</a>
-            </div>
-          </div>
         </div>
-      </div>
-    </section>    
-  
-    <!-- CONTACTO -->
-    <section class="bg-light p-5">
-      <div class="container">
-        <div class="row py-4" id="contacto">
-          <div class="col-md-12">
-            <h2 class="mb-4">Contacto</h2>
-              <form class="mx-auto">
-                <div class="form-group">
-                  <label for="nombre">Nombre</label>
-                  <input type="text" class="form-control blueGray-focus" id="nombre" placeholder="Tu nombre">
-                </div>
-                <div class="form-group">  
-                  <label for="correo">Correo</label>
-                  <input type="email" class="form-control blueGray-focus" id="correo" placeholder="Tu correo">
-                </div>
-                <div class="form-group">
-                  <label for="mensaje">Mensaje</label>
-                  <textarea class="form-control blueGray-focus" id="mensaje" rows="5" placeholder="Escribe tu mensaje"></textarea>
-                </div>
-                <button type="submit" class="btn btn-secondary">Enviar</button>
-            </form>
-          </div>
-        </div>
-      </div>
-    </section>
-  </main>
-  
-    
-    
-  
-  <!-- FOOTER -->
-  <footer class="bg-dark text-white py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-md-6">
-          Desarrollado por <a href="#mis-datos" class="text-blueGray">mi</a>
-        </div>
-        <div class="col-md-6 text-right">
-          <a href="https://github.com/rockaranza" class="text-white pr-2"><i class="fab fa-github"></i></a>
-          <a href="https://twitter.com/Rockaranza" class="text-white pr-2"><i class="fa-brands fa-x-twitter"></i></a>
-          <a href="https://www.linkedin.com/f" class="text-white"><i class="fab fa-linkedin"></i></a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </header>
 
-  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/ae6add6e95.js" crossorigin="anonymous"></script>
+    <!-- CUERPO PAGINA -->
+    <main class="mainContainer">
+        <!-- HOME -->
+        <section class="homeContainer" id="home">
+            <div class="home" id="homeLimit">
+                <div class="titlesHome">
+                    <h2 class="titleBlack">FRONTEND</h2>
+                    <h2 class="titleWhite">DEVELOPER</h2>
+                    <h2 class="titleName">Diego Ocaranza</h2>
+                </div>
+                <div class="homeImg">
+                    <img src="src/img/2.jpg" alt="Diego Ocaranza">
+                </div>
+            </div>
+        </section>
+
+        <!-- ABOUT ME -->
+        <section class="aboutMeContainer" id="aboutMe">
+            <div class="aboutMe">
+                <div class="aboutMeTitle">
+                    <h2 class="titleBlack" id="aboutMeBackTitle">Sobre Mi</h2>
+                    <h2 class="text-frontTitle titleSection">DIEGO OCARANZA</h2>
+                </div>
+                <div class="aboutMeDescrition">
+                    <div class="aboutMeContainerImg">
+                        <img src="src/img/3.jpg" alt="Diego Ocaranza Fullstack Developer">
+                    </div>
+                    <div class="aboutMeContainerText">
+                        <p>Soy un <span>Frontend Developer</span> chileno, actualmente vivo en la ciudad de Montréal, Quebec.</p>
+                        <p>Con más de 6 años de experiencia en el campo, me he destacado principalmente en agencias de marketing digital, donde he tenido el privilegio de contribuir al desarrollo de sitios web de alta calidad. Mi enfoque se ha centrado en optimizar el rendimiento de los sitios, implementar soluciones innovadoras y crear campañas efectivas en redes sociales para impulsar el tráfico y la visibilidad en línea.</p>
+                        <p>Mi especialidad incluye resolver problemas de estilos en sitios desarrollados con WordPress, aprovechando al máximo mi conocimiento en HTML y CSS para garantizar una experiencia de usuario excepcional.</p>
+                        <p>Me encanta enfrentar nuevos desafíos y estoy constantemente buscando oportunidades para expandir mis habilidades y conocimientos en el mundo del desarrollo web. Creo firmemente en la importancia de mantenerme actualizado con las últimas tecnologías y herramientas, siempre con el objetivo de ser un recurso valioso y un miembro colaborativo en cualquier equipo en el que me encuentre.</p>
+                        <div  class="aboutMeContainerButton">
+                            <a href="src/others/CV_Diego.pdf" target="blank" class="anchorButton">Mira mi CV</a>
+                        </div>
+                    </div>
+                </div>    
+            </div>
+        </section>
+
+        <!-- SKILLS -->
+        <section class="skillsContainer" id="skills">
+            <div class="skills">
+                <div class="skillsContainerTitles">
+                    <h2 class="titleBlack">Habilidades</h2>
+                    <h2 class="text-frontTitle titleSection">DESARROLLO CON</h2>  
+                </div>
+                <div class="skillCardsContainer">
+                    <div class="skillCard">
+                        <i class="skillIcon skillIconHTML fab fa-html5"></i>
+                        <h3>HTML 5</h3>
+                    </div>
+                    <div class="skillCard">
+                        <i class="skillIcon skillIconCSS fab fa-css3-alt"></i>
+                        <h3>CSS 3</h3>
+                    </div>
+                    <div class="skillCard">
+                        <i class="skillIcon skillIconJS fab fa-js"></i>
+                        <h3>JavaScript</h3>
+                    </div>
+                    <div class="skillCard">
+                        <i class="skillIcon skillIconSASS fab fa-sass"></i>
+                        <h3>Sass</h3>
+                    </div>
+                    <div class="skillCard">
+                        <i class="skillIcon skillIconBootstrap fab fa-bootstrap"></i>
+                        <h3>Bootstrap</h3>
+                    </div>
+                    <div class="skillCard">
+                        <i class="colorGitHub skillIcon skillIconGH fab fa-github"></i>
+                        <h3>GitHub</h3>
+                    </div>
+                    <div class="skillCard">
+                        <i class="skillIcon skillIconWP fab fa-wordpress"></i>
+                        <h3>WordPress</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- PROJECTS -->
+        <section class="projectsContainer" id="proyects">
+            <div class="projects">
+                <div class="skillsContainerTitles">
+                    <h2 class="titleBlack">Proyectos</h2>
+                    <h2 class="text-frontTitle titleSection">CONOCE MIS TRABAJOS</h2>    
+                </div>
+                    <!-- Agregar los otros contenidos que se necesitan -->
+                    <div class="cardsProjects">
+                        <div class="card">
+                            <a href="https://rockaranza.github.io/landing-fotografo/" target="_blank"><img src="src/img/fotografo.png" alt="Landing Fotografo"></a>
+                            <a href="https://github.com/rockaranza/landing-fotografo" target="_blank">Landing Fotografo<i class="fab fa-github"></i></a>
+                            <p>Muckup desarrollado con HTML y CSS.</p>
+                        </div>
+                        <div class="card">
+                            <a href="https://trivia-game-one.vercel.app/" target="_blank"><img src="src/img/TriviaJSVanilla.jpg" alt="Trivia JS Vanilla"></a>
+                            <a href="https://github.com/rockaranza/triviaGame" target="_blank">Juego de Preguntas <i class="fab fa-github"></i></a>
+                            <p>Juego de Trivia desarrollado en JS Vanilla, consulta API Open Trivia DB.</p>
+                        </div>
+                        <div class="card">
+                            <a href="https://ciamaria.cl" target="_blank"><img src="src/img/ciaMaria.png" alt="Colegio Compañía María"></a>
+                            <a href="https://ciamaria.cl" target="_blank">Implementación WordPress</a>
+                            <p>Implementación en sitio WordPress para la recolección de datos del formulario de contacto, reflejandolos en planilla para hacer uso de estos.</p>
+                        </div>
+                        <div class="card">
+                            <a href="https://lago-todoslossantos.cl/" target="_blank"><img src="src/img/cofradia.png" alt="Cofradía del Lago Todos los Santos"></a>
+                            <a href="https://lago-todoslossantos.cl/" target="_blank">Administración de  WordPress</a>
+                            <p>Implementación de administración de usuarios en sitio WordPress, generando distintos niveles de accesos dentro del sitio.</p>
+                        </div>
+                        <div class="card">
+                            <a href="https://marcelacortes-joyas.cl/" target="_blank"><img src="src/img/joyas.png" alt="Marcela Cortes Joyas"></a>
+                            <a href="https://marcelacortes-joyas.cl/" target="_blank">Implementación Redbanc Chile en WordPress</a>
+                            <p>Implementación de sistema de pago con tarjetas bancarias bajo Redbanc Chile en sitio WordPress.</p>
+                        </div>
+                        <div class="card">
+                            <a href="https://mitex.cl/" target="_blank"><img src="src/img/Mitex.png" alt="Mitex"></a>
+                            <a href="https://mitex.cl/" target="_blank">Desarrollo en WordPress</a>
+                            <p>Participación en desarrollo de sitio web en la agencia Minimal Diseño.</p>
+                        </div>
+                    </div>
+                    <!-- Agregar los otros contenidos que se necesitan -->
+                </div>
+            </div>
+        </section>
+
+        <!-- CONTACT -->
+        <section class="contactContainer" id="contact">
+            <div class="contact">
+                <div class="skillsContainer__titles">
+                    <h2 class="titleBlack">Contacto</h2>
+                    <h2 class="text-frontTitle titleSection">HABLEMOS</h2>    
+                </div>
+                <div class="formContainer">
+                    <p>Escríbeme y me pondré en contacto contigo para que podamos desarrollar esa idea...</p>
+                    <form action="https://formsubmit.co/diego.ocaranza@gmail.com" method="POST" class="form"> 
+                        <label class="dataContainer" for="nombre"></label>
+                        <input type="text" name="fname" id="nombre" class="inputText" placeholder="Nombre">
+                        
+                        <label class="dataContainer" for="correo"></label>
+                        <input type="mail" name="email" id="correo" class="inputText" placeholder="Correo">
+                        
+                        <label class="dataContainer" for="comentario">
+                            <textarea name="comentarios" id="comentario" class="inputMenssage" placeholder="Mensaje"></textarea>
+                        </label>
+    
+                        <input type="submit" value="Enviar Mensaje" class="button">
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- UP BUTTTON -->
+        <button id="upButton" class="upButton hidden">
+            <i class="fas fa-rocket"></i>
+        </button>
+    </main>
+
+    <footer class="footerContainer">
+        <div class="footer">
+            <p>developer by <a href="#aboutMe">me</a></p>
+            <div class="socialNetworks">
+                <a href="https://www.linkedin.com/in/diego-ocaranza-garcia" target="blank"><i class="fab fa-linkedin linkedinColor"></i></a>
+                <a href="https://twitter.com/Rockaranza" target="blank"><i class="fab fa-twitter twitterColor"></i></a>
+                <a href="https://github.com/rockaranza" target="blank"><i class="fab fa-github gitHubColor"></i></a>   
+            </div>
+        </div>
+    </footer>
+    <script src="https://kit.fontawesome.com/ae6add6e95.js" crossorigin="anonymous"></script>
+    <script src="src/js/min/script.min.js"></script>
 </body>
 </html>
